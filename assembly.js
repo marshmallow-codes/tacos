@@ -107,6 +107,7 @@ for (let i = 0; i < orders.length - 1; i++) {
   console.log(`serving ${orders.pop()}`);
 }
 let lastTaco = orders.pop();
+totalTacosServed++;
 console.log(`serving ${lastTaco}`);
 
 // 9. The chef is asking you what the last taco you made was. Print out the last item of the last customer's order. "The last customer ordered {name of taco}"
