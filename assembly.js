@@ -123,12 +123,13 @@ console.log(customers);
 for (let i = 0; i < customers.length; i++) {
   console.log(`Now serving ${customers[i].name}`);
   console.log(`they ordered ${customers[i].order.length} tacos`);
-  for (let j = 0; j < customers[i].order.length; i++) {
+  for (let j = 0; j < customers[i].order.length; j++) {
     orders.push(customers[i].order[j]);
     // do I add step 7??
   }
 }
 
+console.log(orders);
 for (let i = 0; i < orders.length; i++) {
-  console.log(`serving ${orders.pop}`);
+  console.log(`serving ${orders.pop()}`);
 }
